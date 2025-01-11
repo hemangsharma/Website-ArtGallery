@@ -1,0 +1,50 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+  }
+  
+  .about img {
+    width: 250px; /* Adjusted for mobile */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .about h2 {
+    font-size: 1.8rem; /* Adjusted for smaller screens */
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1rem; /* Adjusted for readability */
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column; /* Stack items vertically on mobile */
+    }
+  
+    .about img {
+      width: 200px; /* Smaller image size for narrow screens */
+      height: 200px;
+    }
+  
+    .about-text {
+      text-align: center; /* Center-align text */
+    }
+  }
+  
